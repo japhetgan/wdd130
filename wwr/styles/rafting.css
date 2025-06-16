@@ -25,6 +25,19 @@ footer {
   margin: 0 auto;
 }
 
+header {
+  padding: 20px 60px;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+header nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 h1,
 h2 {
   font-family: var(--heading-font);
@@ -78,4 +91,71 @@ h1 {
   float: right;
   width: 145px;
   margin-left: 12px;
+}
+
+.adventure-gallery {
+  text-align: center;
+  padding: 0 16px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.history h2 {
+  text-align: center;
+}
+
+.history-content img {
+  width: auto;
+  height: 150px;
+}
+
+.history-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-content: space-between;
+}
+
+figure {
+  width: 115px;
+  height: 115px;
+  position: relative;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.adventure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
 }
