@@ -67,8 +67,6 @@ article {
 }
 
 h1 {
-  position: absolute;
-  top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
@@ -150,6 +148,10 @@ figcaption {
   gap: 16px;
 }
 
+.contact.main {
+  position: relative;
+  padding: 20px 0;
+}
 
 .contact-container {
   padding: 20px 0;
